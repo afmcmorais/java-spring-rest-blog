@@ -21,6 +21,9 @@ public class Author {
     private String username;
     private String password;
 
+    @OneToMany
+    private List<Post> post;
+
     public Author() {
         super();
     }
