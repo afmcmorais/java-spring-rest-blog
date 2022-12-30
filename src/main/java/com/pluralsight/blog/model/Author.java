@@ -21,9 +21,6 @@ public class Author {
     private String username;
     private String password;
 
-    @OneToMany
-    private List<Post> post;
-
     public Author() {
         super();
     }
@@ -37,7 +34,7 @@ public class Author {
     }
 
     public void setPassword(String password) {
-         this.password = PASSWORD_ENCODER.encode(password);
+        this.password = PASSWORD_ENCODER.encode(password);
     }
 
     public Long getId() {
